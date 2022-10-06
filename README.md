@@ -17,7 +17,7 @@ Hacktoberfest, in its 10th year, is a month-long celebration of open source soft
 
 There is no doubt that most of our childhood was spent watching anime. Haikyuu is one of my favorites. With Hacktoberfest 2022 coming up and being one of the people who would participate for the very first time, I decided to create this repository that's actually a very basic web-page that let the user view and add their favourite characters.
 
-You can find all the characters on  https://haikyuu.fandom.com/wiki/Haikyuu!!_Wiki
+You can find all the characters on  https://haikyuu.fandom.com/wiki/Characters
 
 # Contents of the Webpage
 
