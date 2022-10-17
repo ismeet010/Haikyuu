@@ -1,0 +1,89 @@
+/* styles for preloader page starts here */
+.preloader {
+    width: 120px;
+    height: 120px;
+    background-color: #ee6730;
+    border-color: black;
+    border-radius: 240px;
+    position: relative;
+    animation: bounce 0.6s linear infinite,
+        move 1.5s linear infinite 0.24s;
+}
+
+.loader-shadow {
+    width: 60px;
+    height: 0;
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.88);
+    border-radius: 120px 120px;
+    position: absolute;
+    animation: move 1.5s linear infinite 0.24s;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 0;
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        bottom: 70px;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-360px);
+    }
+
+    16.666% {
+        transform: translateX(-119.88px);
+    }
+
+    33.3333% {
+        transform: translateX(119.88px);
+    }
+
+    50% {
+        transform: translateX(360px);
+    }
+
+    66.6666% {
+        transform: translateX(119.88px);
+    }
+
+    83.333% {
+        transform: translateX(-119.88px);
+    }
+
+    100% {
+        transform: translateX(-360px);
+    }
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(137, 196, 244);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: opacity 0.75s, visbility 0.75s;
+    z-index: 99999;
+}
+
+.loader-container--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
