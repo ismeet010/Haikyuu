@@ -69,12 +69,10 @@
 </style>
 
 <body class="lightmode">
-    <!-- this div is for preloader page -->
     <div class="loader-container">
         <div class="preloader"></div>
         <div class="loader-shadow"></div>
     </div>
-    <!-- div for preloader page ends here -->
     <a href="#" class="to-top">
         <i class="fa fa-arrow-up"></i>
     </a>
@@ -111,9 +109,9 @@
                     </li> -->
                         <li>
                             <div>
-                                <button onclick="darkmode()"
-                                    style="border-radius:4px; background-color:rgb(241, 240, 236);margin-left: 25px; padding: 1px 2px"
-                                    id="toggler">Darkmode</button>
+                                <img onclick="darkmode()" src="https://cdn-icons-png.flaticon.com/512/5758/5758839.png"
+                                    style="border-radius:4px; background-color:rgb(241, 240, 236);margin-left: 10px; padding: 1px 2px; width:5vw; float:right; cursor: pointer;"
+                                    id="toggler"> </img>
                             </div>
                         </li>
                     </ul>
@@ -290,67 +288,95 @@
                 </div>
                 <!--[Taich Kawanishi] card end-->
 
-
+                <!-- [Kenma Kozume] card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Images/Kenma Kozume.jpeg" alt="Kenma Kozume" height="390px" width="300px">
+                    <img src="./Images/Kenma Kozume.jpeg" alt="Kenma Kozume" height="390px" width="300px">  
+                            <img src="./Images/Kenma Kozume.jpeg" alt="Kenma Kozume" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Kenma Kozume</h2>
+                                <p class="card-text">Kenma has a very relaxed and laid back personality. </p>
+                                <p>He hardly ever loses his cool, and he usually never gets excited about anything (with
+                                    the exception of Hinata and video games). He is quiet and reserved and does not
+                                    voice his opinions often since he is afraid of how others would think of them. He
+                                    isn't the type who can make friends easily, and his only friend back when he was
+                                    younger had been Tetsurou Kuroo. Despite his modest personality, Kenma is actually
+                                    quite skilled in volleyball, with his extraordinary game sense and technique, which
+                                    makes up for his power, speed, and stamina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [Kenma Kozume] card end-->
 
             </div>
+    </div>
 
-        </main>
-        <audio src="./source/sounds/Haikyuu.mp3"></audio>
-        <footer>
-            <nav class="navbar navbar-expand-lg navbar-light nav1">
-                <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
-                        href="https://www.linkedin.com/in/ismeet-kour-chhabda/">Ismeet Chhabda</a></p>
-            </nav>
-        </footer>
-        <script src="./source/scripts/sound.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-            </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-
-            </script>
-
-        <script src="./source/scripts/searchbar.js"></script>
-        <script src="./source/scripts/scrollEffect.js"></script>
-
-        <script src="./source/scripts/scrolltotop.js"></script>
-        <script src="./preloader.js"></script>
-        <script>
-
-            /* ------- Scroll To Top Button -------*/
-
-            const toTop = document.querySelector(".to-top");
-            window.addEventListener("scroll", () => {
-
-                if (window.pageYOffset > 400) {
-                    toTop.classList.add("active");
-                } else {
-                    toTop.classList.remove("active");
-                }
-
-            });
+    </main>
+    <audio src="./source/sounds/Haikyuu.mp3"></audio>
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-light nav1">
+            <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
+                    href="https://www.linkedin.com/in/ismeet-kour-chhabda/">Ismeet Chhabda</a></p>
+        </nav>
+    </footer>
+    <script src="./source/scripts/sound.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
 
         </script>
 
+    <script src="./source/scripts/searchbar.js"></script>
+    <script src="./source/scripts/scrollEffect.js"></script>
 
-        <script>
-            function darkmode() {
-                // console.log("hello");
-                var element1 = document.querySelector(".loader");
-                var element2 = document.querySelector("body")
-                if (element1.classList.contains("lightmode")) {
-                    element1.classList.add("dark-mode"); element1.classList.remove("lightmode");
-                    element2.classList.add("dark-mode"); element2.classList.remove("lightmode");
-                    document.querySelector("#toggler").innerHTML = "LightMode"
-                }
-                else {
-                    element1.classList.add("lightmode"); element1.classList.remove("dark-mode");
-                    element2.classList.add("lightmode"); element2.classList.remove("dark-mode");
-                    document.querySelector("#toggler").innerHTML = "DarkMode";
-                }
+    <script src="./source/scripts/scrolltotop.js"></script>
+    <script src="./preloader.js"></script>
+    <script>
+
+        /* ------- Scroll To Top Button -------*/
+
+        const toTop = document.querySelector(".to-top");
+        window.addEventListener("scroll", () => {
+
+            if (window.pageYOffset > 400) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
             }
-        </script>
+
+        });
+
+    </script>
+
+
+    <script>
+        function darkmode() {
+            // console.log("hello");
+            var element1 = document.querySelector(".loader");
+            var element2 = document.querySelector("body")
+            if (element1.classList.contains("lightmode")) {
+                element1.classList.add("dark-mode"); element1.classList.remove("lightmode");
+                element2.classList.add("dark-mode"); element2.classList.remove("lightmode");
+                // document.querySelector("#toggler").="LightMode" 
+
+                document.getElementById("toggler").src = "https://cdn-icons-png.flaticon.com/512/5043/5043117.png"
+            }
+            else {
+                element1.classList.add("lightmode"); element1.classList.remove("dark-mode");
+                element2.classList.add("lightmode"); element2.classList.remove("dark-mode");
+                // document.querySelector("#toggler").innerHTML="DarkMode"; 
+                // document.getElementById("toggler").src="https://cdn-icons-png.flaticon.com/512/5043/5043117.png"
+                document.getElementById("toggler").src = "https://cdn-icons-png.flaticon.com/512/5758/5758839.png";
+            }
+        }
+    </script>
     </div>
 </body>
 
